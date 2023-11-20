@@ -117,7 +117,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -135,6 +135,101 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/11/21/linux%E5%AD%A6%E4%B9%A0.md/%E8%AF%BE%E7%A8%8B%E6%A6%82%E8%A7%88%E4%B8%8Eshell/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/11/21/linux%E5%AD%A6%E4%B9%A0.md/%E8%AF%BE%E7%A8%8B%E6%A6%82%E8%A7%88%E4%B8%8Eshell/" class="post-title-link" itemprop="url">linux学习1</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2023-11-21 00:28:37 / Modified: 01:46:15" itemprop="dateCreated datePublished" datetime="2023-11-21T00:28:37+08:00">2023-11-21</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>##1.date<br />
+展示出当时的时间<br />
+##2.echo<br />
+输出你输入的参数，就是你在echo 后输入的东西，他会原封不动的输出<br />
+但是他还能查看 搜索路径 即：echo $PATH ,他会输出路径，而shell就是在路径；里面搜索程序的<br />
+##3.mkdir<br />
+用来创建目录。 该命令创建由dirname命名的目录。 如果在目录名的前面没有加任何路径名，则在当前目录下创建由dirname指定的目录；如果给出了一个已经存在的路径，将会在该目录下创建一个指定的目录。 在创建目录时，应保证新建的目录与它所在目录下的文件没有重名。<br />
+通过 mkdir 命令可以实现在指定位置创建以 DirName(指定的文件名)命名的文件夹或目录。<br />
+要创建文件夹或目录的用户必须对所创建的文件夹的父文件夹具有写权限。<br />
+并且，所创建的文件夹(目录)不能与其父目录(即父文件夹)中的文件名重名，<br />
+即同一个目录下不能有同名的(区分大小写)。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">-m, --mode=模式，设定权限&lt;模式&gt; (类似 chmod)，而不是 rwxrwxrwx 减 umask</span><br><span class="line"> </span><br><span class="line">-p, --parents     可以是一个路径名称。</span><br><span class="line">                  此时若路径中的某些目录尚不存在,加上此选项后,</span><br><span class="line">                  系统将自动建立好那些尚不存在的目录,即一次可以建立多个目录; </span><br><span class="line"> </span><br><span class="line">-v, --verbose     每次创建新目录都显示信息</span><br><span class="line"> </span><br><span class="line">    --help        显示此帮助信息并退出</span><br><span class="line"> </span><br><span class="line">    --version     输出版本信息并退出</span><br></pre></td></tr></table></figure>
+<p>##4.which<br />
+如果想知道运行的到底是什么程序，比如 which echo ,他会返回/usr/bin/echo，以此来告诉我怎么调用到echo的<br />
+##5.pwd<br />
+他会打印出我当前所在的路径<br />
+##<a target="_blank" rel="noopener" href="http://6.cd">6.cd</a><br />
+表示更改当前目录如 cd /home 到根目录<br />
+##7.“.“和”…”<br />
+分别表示当前目录和父目录，这个是一个更方便切换目录的方式<br />
+##<a target="_blank" rel="noopener" href="http://8.ls">8.ls</a><br />
+列出当前目录中有什么文件<br />
+##9.cd+“~”<br />
+将我带到我的主目录<br />
+##10.cd+“-”<br />
+切换到上次访问的目录</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
