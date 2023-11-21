@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="魔术棋子题目描述在一个M*N的魔术棋盘中，每个格子中均有一个整数，当棋子走进这个格子中，则此棋子上的数会被乘以此格子中的数。一个棋子从左上角走到右下角，只能向右或向下行动，请问此棋子走到右下角后，模（mod）K可以为几？ 如以下2*3棋盘：123    4    45    6    6棋子初始数为1，开始从左上角进入棋盘，走到右下角，上图中，最后棋子上的数可能为288,432或540。所以当K">
+    <meta name="description" content="魔术棋子  题目描述 在一个M*N的魔术棋盘中，每个格子中均有一个整数，当棋子走进这个格子中，则此棋子上的数会被乘以此格子中的数。一个棋子从左上角走到右下角，只能向右或向下行动，请问此棋子走到右下角后，模（mod）K可以为几？ 如以下2*3棋盘： 123    4    45    6    6 棋子初始数为1，开始从左上角进入棋盘，走到右下角，上图中，最后棋子上的数可能为288,432或540">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2049 魔术棋子">
 <meta property="og:url" content="http://example.com/2023/11/20/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="魔术棋子题目描述在一个M*N的魔术棋盘中，每个格子中均有一个整数，当棋子走进这个格子中，则此棋子上的数会被乘以此格子中的数。一个棋子从左上角走到右下角，只能向右或向下行动，请问此棋子走到右下角后，模（mod）K可以为几？ 如以下2*3棋盘：123    4    45    6    6棋子初始数为1，开始从左上角进入棋盘，走到右下角，上图中，最后棋子上的数可能为288,432或540。所以当K">
+<meta property="og:description" content="魔术棋子  题目描述 在一个M*N的魔术棋盘中，每个格子中均有一个整数，当棋子走进这个格子中，则此棋子上的数会被乘以此格子中的数。一个棋子从左上角走到右下角，只能向右或向下行动，请问此棋子走到右下角后，模（mod）K可以为几？ 如以下2*3棋盘： 123    4    45    6    6 棋子初始数为1，开始从左上角进入棋盘，走到右下角，上图中，最后棋子上的数可能为288,432或540">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-11-20T04:56:02.760Z">
 <meta property="article:modified_time" content="2023-11-21T00:54:54.834Z">
@@ -109,7 +109,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%AD%94%E6%9C%AF%E6%A3%8B%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text">魔术棋子</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.2.</span> <span class="nav-text">输入格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.3.</span> <span class="nav-text">输出格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B-1"><span class="nav-number">1.4.</span> <span class="nav-text">样例 #1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%85%A5-1"><span class="nav-number">1.4.1.</span> <span class="nav-text">样例输入 #1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%87%BA-1"><span class="nav-number">1.4.2.</span> <span class="nav-text">样例输出 #1</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%AD%94%E6%9C%AF%E6%A3%8B%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text"> 魔术棋子</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.1.</span> <span class="nav-text"> 题目描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.2.</span> <span class="nav-text"> 输入格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F"><span class="nav-number">1.3.</span> <span class="nav-text"> 输出格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B-1"><span class="nav-number">1.4.</span> <span class="nav-text"> 样例 #1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%85%A5-1"><span class="nav-number">1.4.1.</span> <span class="nav-text"> 样例输入 #1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%87%BA-1"><span class="nav-number">1.4.2.</span> <span class="nav-text"> 样例输出 #1</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -198,13 +198,22 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="魔术棋子"><a href="#魔术棋子" class="headerlink" title="魔术棋子"></a>魔术棋子</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>在一个M*N的魔术棋盘中，每个格子中均有一个整数，当棋子走进这个格子中，则此棋子上的数会被乘以此格子中的数。一个棋子从左上角走到右下角，只能向右或向下行动，请问此棋子走到右下角后，模（mod）K可以为几？</p>
-<p>如以下2*3棋盘：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3    4    4</span><br><span class="line">5    6    6</span><br></pre></td></tr></table></figure><br>棋子初始数为1，开始从左上角进入棋盘，走到右下角，上图中，最后棋子上的数可能为288,432或540。所以当K = 5时，可求得最后的结果为：0,2,3。</p>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行为三个数，分别为M,N,K (1 ≤ M,N,K ≤ 100)以下M行，每行N个数，分别为此方阵中的数。</p>
-<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>第一行为可能的结果个数</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="魔术棋子"><a class="markdownIt-Anchor" href="#魔术棋子"></a> 魔术棋子</h1>
+<h2 id="题目描述"><a class="markdownIt-Anchor" href="#题目描述"></a> 题目描述</h2>
+<p>在一个M*N的魔术棋盘中，每个格子中均有一个整数，当棋子走进这个格子中，则此棋子上的数会被乘以此格子中的数。一个棋子从左上角走到右下角，只能向右或向下行动，请问此棋子走到右下角后，模（mod）K可以为几？</p>
+<p>如以下2*3棋盘：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3    4    4</span><br><span class="line">5    6    6</span><br></pre></td></tr></table></figure>
+<p>棋子初始数为1，开始从左上角进入棋盘，走到右下角，上图中，最后棋子上的数可能为288,432或540。所以当K = 5时，可求得最后的结果为：0,2,3。</p>
+<h2 id="输入格式"><a class="markdownIt-Anchor" href="#输入格式"></a> 输入格式</h2>
+<p>第一行为三个数，分别为M,N,K (1 ≤ M,N,K ≤ 100)以下M行，每行N个数，分别为此方阵中的数。</p>
+<h2 id="输出格式"><a class="markdownIt-Anchor" href="#输出格式"></a> 输出格式</h2>
+<p>第一行为可能的结果个数</p>
 <p>第二行为所有可能的结果(按升序输出)</p>
-<h2 id="样例-1"><a href="#样例-1" class="headerlink" title="样例 #1"></a>样例 #1</h2><h3 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入 #1"></a>样例输入 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 3 5</span><br><span class="line">3 4 4</span><br><span class="line">5 6 6</span><br></pre></td></tr></table></figure>
-<h3 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出 #1"></a>样例输出 #1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">0 2 3</span><br></pre></td></tr></table></figure>
+<h2 id="样例-1"><a class="markdownIt-Anchor" href="#样例-1"></a> 样例 #1</h2>
+<h3 id="样例输入-1"><a class="markdownIt-Anchor" href="#样例输入-1"></a> 样例输入 #1</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 3 5</span><br><span class="line">3 4 4</span><br><span class="line">5 6 6</span><br></pre></td></tr></table></figure>
+<h3 id="样例输出-1"><a class="markdownIt-Anchor" href="#样例输出-1"></a> 样例输出 #1</h3>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">0 2 3</span><br></pre></td></tr></table></figure>
     </div>
 
     
